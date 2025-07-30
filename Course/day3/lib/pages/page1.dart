@@ -46,13 +46,28 @@ class _Page1State extends State<Page1> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Icon(Icons.call, color: Colors.green, size: 25),
+                        OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            backgroundColor: Colors.black,
+                          ),
+                          onPressed: () {},
+                          child: Text(
+                            "First Commit",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
                         SizedBox(height: 5),
-                        Text(
-                          "Caller App",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        Padding(
+                          padding: const EdgeInsets.only(left: 18),
+                          child: Text(
+                            "Caller App",
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ],
