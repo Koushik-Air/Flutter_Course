@@ -85,6 +85,8 @@ class _ButtonWorkState extends State<ButtonWork> {
             ),
           ),
           SizedBox(height: 10),
+
+          IconButton(onPressed: (){}, icon: Icon(Icons.person_add_alt_1_sharp)),
         ],
       ),
     );
